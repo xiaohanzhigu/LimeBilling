@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.EditActivity"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp">
+
+        <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:scaleY="2"
+                android:scaleX="2"
+                app:srcCompat="@mipmap/bj_return"
+                android:id="@+id/btn_edit_cancel"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/white"/>
+
+        <TextView
+                android:text="账单详情"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/textView3"
+                android:layout_weight="5" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            style="@style/edit_ll_style">
+
+        <TextView
+                android:text="账单类型"
+                style="@style/edit_text_view_left_style" />
+
+        <TextView
+                android:text="支出"
+                style="@style/edit_text_view_right_style"
+                android:id="@+id/tv_edit_is_disburse" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            style="@style/edit_ll_style">
+
+        <TextView
+                android:text="分类"
+                style="@style/edit_text_view_left_style" />
+
+        <TextView
+                android:text="娱乐"
+                style="@style/edit_text_view_right_style"
+                android:id="@+id/tv_edit_title" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            style="@style/edit_ll_style">
+
+        <TextView
+                android:text="备注"
+                style="@style/edit_text_view_left_style" />
+
+        <TextView
+                android:text="午饭"
+                style="@style/edit_text_view_right_style"
+                android:id="@+id/tv_edit_remark"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            style="@style/edit_ll_style">
+
+        <TextView
+                android:text="金额"
+                style="@style/edit_text_view_left_style"/>
+
+        <TextView
+                android:text="-55.0"
+                style="@style/edit_text_view_right_style"
+                android:id="@+id/tv_edit_price"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            style="@style/edit_ll_style">
+
+        <TextView
+                android:text="时间"
+                style="@style/edit_text_view_left_style"/>
+
+        <TextView
+                android:text="2022年12月18日"
+                style="@style/edit_text_view_right_style"
+                android:id="@+id/tv_edit_date"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="horizontal"
+                style="@style/edit_ll_style"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="70dp">
+
+            <Button
+                    android:text="删除"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_15dp_red_corners"
+                    android:id="@+id/btn_edit_delete"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"/>
+
+            <Button
+                    android:text="编辑"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_15dp_green_corners"
+                    android:id="@+id/btn_edit_edit"
+                    android:layout_weight="1" />
+    </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

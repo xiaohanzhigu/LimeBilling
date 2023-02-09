@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_10dp_corners"
+        android:padding="20dp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        <ImageButton
+                app:srcCompat="@mipmap/bj_label_zf"
+                android:background="@drawable/shape_15dp_ligh_gray_corners"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button3"
+                android:layout_weight="1" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_15dp_ligh_gray_corners">
+
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="#其他"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/light_grey"
+                    android:ems="10"
+                    android:id="@+id/et_remark"
+                    android:layout_weight="1" />
+
+            <TextView
+                    android:text="￥0.00"
+                    android:textSize="30sp"
+                    android:textColor="@color/lime_green"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_money"
+                    android:gravity="right"
+                    android:layout_weight="3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+
+        <Button
+                android:text="1"
+                style="@style/dialog_key_top_button_style"
+                android:id="@+id/btn_input_1" />
+
+        <Button
+                android:text="2"
+                style="@style/dialog_key_top_button_style"
+                android:id="@+id/btn_input_2" />
+
+        <Button
+                android:text="3"
+                style="@style/dialog_key_top_button_style"
+                android:id="@+id/btn_input_3" />
+
+        <Button
+                android:text="12月17日"
+                style="@style/dialog_key_top_button_style"
+                android:layout_marginRight="0dp"
+                android:id="@+id/btn_input_date" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+        <Button
+                android:text="4"
+                style="@style/dialog_key_top_button_style"
+                android:id="@+id/btn_input_4" />
+
+        <Button
+                android:text="5"
+                style="@style/dialog_key_top_button_style"
+                android:id="@+id/btn_input_5" />
+
+        <Button
+                android:text="6"
+                style="@style/dialog_key_top_button_style"
+                android:id="@+id/btn_input_6" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:text="+"
+                    style="@style/dialog_key_top_button_style"
+                    android:id="@+id/btn_input_sum"
+                    />
+-
+            <Button
+                    android:text="-"
+                    style="@style/dialog_key_top_button_style"
+                    android:id="@+id/btn_input_sub"
+                    android:layout_marginRight="0dp"
+                    />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <Button
+                    android:text="7"
+                    style="@style/dialog_key_bottom_button_style"
+                    android:id="@+id/btn_input_7"
+                    />
+            <Button
+                    android:text="."
+                    android:layout_marginTop="10dp"
+                    style="@style/dialog_key_bottom_button_style"
+                    android:id="@+id/btn_input_dot"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+            <Button
+                    android:text="8"
+                    style="@style/dialog_key_bottom_button_style"
+                    android:id="@+id/btn_input_8"
+                    />
+            <Button
+                    android:text="0"
+                    android:layout_marginTop="10dp"
+                    style="@style/dialog_key_bottom_button_style"
+                    android:id="@+id/btn_input_0"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:text="9"
+                    style="@style/dialog_key_bottom_button_style"
+                    android:id="@+id/btn_input_9"
+                    android:layout_marginRight="0dp"/>
+            <Button
+                    android:text="×"
+                    android:layout_marginTop="10dp"
+                    style="@style/dialog_key_bottom_button_style"
+                    android:id="@+id/btn_input_back"
+                    android:layout_marginRight="0dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <Button
+                    android:text="确定"
+                    style="@style/dialog_key_bottom_button_style"
+                    android:background="@drawable/shape_15dp_green_corners"
+                    android:id="@+id/btn_input_confirm"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

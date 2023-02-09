@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.SettingFragment"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@drawable/shape_15dp_ligh_gray_corners">
+
+        <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:background="@mipmap/tx_mortx"
+                android:id="@+id/iv_my_image"
+                android:layout_weight="1" />
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp">
+
+            <TextView
+                    android:text="姓名"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_my_nickname"
+                    android:layout_weight="1" />
+
+            <TextView
+                    android:text="开通会员,体验更多功能"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/tv_detail_remark"
+                    android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+            android:text="功能"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11" />
+
+    <Button
+            android:text="修改姓名"
+            android:layout_marginTop="18dp"
+            style="@style/my_edit_button_style"
+            android:id="@+id/btn_my_edit_nickname" />
+
+    <Button
+            android:text="修改密码"
+            android:layout_marginTop="18dp"
+            style="@style/my_edit_button_style"
+            android:id="@+id/btn_my_edit_pwd" />
+
+    <Button
+            android:text="绑定微信"
+            android:layout_marginTop="18dp"
+            style="@style/my_edit_button_style"
+            android:id="@+id/btn_my_edit_wx" />
+
+    <Button
+            android:text="绑定手机"
+            android:layout_marginTop="18dp"
+            style="@style/my_edit_button_style"
+            android:id="@+id/btn_my_edit_phone" />
+
+    <Button
+            android:text="退出登录"
+            android:layout_marginTop="18dp"
+            style="@style/my_edit_button_style"
+            android:id="@+id/btn_my_exit" />
+
+
+
+
+
+</LinearLayout>

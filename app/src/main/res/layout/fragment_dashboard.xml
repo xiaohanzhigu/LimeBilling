@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.DashboardFragment"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+        <TextView
+                android:text="数据"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_weight="4"/>
+
+        <Button
+                android:text="2022年"
+                android:textSize="16sp"
+                android:drawableRight="@mipmap/bj_xiao_return"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:background="@drawable/shape_15dp_ligh_gray_corners"
+                android:layout_height="40dp"
+                android:id="@+id/tv_year"
+                android:layout_weight="2"
+                android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+        <LinearLayout
+                android:orientation="vertical"
+                style="@style/count_layout_style">
+
+            <TextView
+                    android:text="今年支出"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:text="￥2346.16"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/lime_green"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_count_jnzc" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+               style="@style/count_layout_style"
+                android:layout_marginLeft="0dp">
+            <TextView
+                    android:text="今年收入"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:text="￥8500.00"
+                    android:textColor="@color/lime_green"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_count_jnsr" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                style="@style/count_layout_style">
+            <TextView
+                    android:text="今年结余"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:text="￥5708.84"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/lime_green"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_count_jnjy" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                style="@style/count_layout_style"
+                android:layout_marginLeft="0dp">
+
+            <TextView
+                    android:text="今年记账笔数"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            <TextView
+                    android:text="15"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/lime_green"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_count_jzbs" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+        <TextView
+                android:text="每月数据"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+        <TextView
+                android:text="支出"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_marginBottom="65dp">
+
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_month"
+                android:dividerHeight="15dp"
+                android:divider="#00000000"
+                android:scrollbars="none"
+                android:listSelector="@android:color/transparent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

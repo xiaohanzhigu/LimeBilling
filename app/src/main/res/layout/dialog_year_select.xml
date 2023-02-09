@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:paddingBottom="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/shape_15dp_white_corners">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:text="选择年份"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_weight="1" />
+
+        <ImageButton
+                app:srcCompat="@mipmap/bj_qx"
+                android:scaleType="fitEnd"
+                android:background="@color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_year_select"
+                android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <GridView
+            android:id="@+id/gv_year_select"
+            android:verticalSpacing="15dp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:horizontalSpacing="0dp"
+            android:columnWidth="150dp"
+            android:listSelector="@android:color/transparent"
+            android:layout_marginTop="20dp"/>
+</LinearLayout>
